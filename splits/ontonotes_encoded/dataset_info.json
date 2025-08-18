@@ -1,0 +1,96 @@
+{
+  "builder_name": "parquet",
+  "citation": "\n@inproceedings{hovy-etal-2006-ontonotes,\n    title = \"{O}nto{N}otes: The 90{\\%} Solution\",\n    author = \"Hovy, Eduard  and\n      Marcus, Mitchell  and\n      Palmer, Martha  and\n      Ramshaw, Lance  and\n      Weischedel, Ralph\",\n    booktitle = \"Proceedings of the Human Language Technology Conference of the {NAACL}, Companion Volume: Short Papers\",\n    month = jun,\n    year = \"2006\",\n    address = \"New York City, USA\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/N06-2015\",\n    pages = \"57--60\",\n}\n",
+  "config_name": "ontonotes5",
+  "dataset_name": "ontonotes5",
+  "dataset_size": 17810645,
+  "description": "[ontonotes5 NER dataset](https://aclanthology.org/N06-2015/)",
+  "download_checksums": {
+    "hf://datasets/tner/ontonotes5@d46d48b229d1f1ce0daff0d35264606c03fd349a/ontonotes5/train/0000.parquet": {
+      "num_bytes": 3679631,
+      "checksum": null
+    },
+    "hf://datasets/tner/ontonotes5@d46d48b229d1f1ce0daff0d35264606c03fd349a/ontonotes5/validation/0000.parquet": {
+      "num_bytes": 515208,
+      "checksum": null
+    },
+    "hf://datasets/tner/ontonotes5@d46d48b229d1f1ce0daff0d35264606c03fd349a/ontonotes5/test/0000.parquet": {
+      "num_bytes": 517495,
+      "checksum": null
+    }
+  },
+  "download_size": 4712334,
+  "features": {
+    "tokens": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "labels": {
+      "feature": {
+        "dtype": "int32",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "input_ids": {
+      "feature": {
+        "dtype": "int32",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "token_type_ids": {
+      "feature": {
+        "dtype": "int8",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "attention_mask": {
+      "feature": {
+        "dtype": "int8",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "word_ids": {
+      "feature": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    }
+  },
+  "homepage": "https://github.com/asahi417/tner",
+  "license": "",
+  "size_in_bytes": 22522979,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 13964727,
+      "num_examples": 59924,
+      "dataset_name": "ontonotes5"
+    },
+    "validation": {
+      "name": "validation",
+      "num_bytes": 1892580,
+      "num_examples": 8528,
+      "dataset_name": "ontonotes5"
+    },
+    "test": {
+      "name": "test",
+      "num_bytes": 1953338,
+      "num_examples": 8262,
+      "dataset_name": "ontonotes5"
+    }
+  },
+  "version": {
+    "version_str": "1.0.0",
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}
